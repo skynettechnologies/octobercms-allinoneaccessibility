@@ -2,7 +2,7 @@
 
 $string= [
     'name' => 'All In One Accessibility',
-    'description' => 'Customize the footer with your signature!',
+    'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
     'fields' => [
         'title' => 'All In One Accessibility Settings',
         'aioa_licensekey'=>'License Key',
