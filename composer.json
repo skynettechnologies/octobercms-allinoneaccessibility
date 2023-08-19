@@ -1,7 +1,7 @@
 {
-    "name": "SkynetTechnologies/allinoneaccessibility-plugin",
+    "name": "skynettechnologies/allinoneaccessibility-plugin",
     "type": "october-plugin",
-    "description": "None",
+    "description": "Quick Web Accessibility Implementation with All In One Accessibility!",
     "require": {
         "composer/installers": "~1.0"
     }
