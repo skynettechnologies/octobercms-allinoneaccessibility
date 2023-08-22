@@ -13,7 +13,7 @@ You may install a plugin from a remote source using the --from option.
 `php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git`
 
 Use the --want option to specify a target branch or version.
-`php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git --want=main`
+`php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git --want=dev-main`
 
 ## Configuring All in One Accessibility
 
