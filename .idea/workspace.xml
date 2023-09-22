@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7449361-1cf3-4696-98bf-f579f168ed15" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/lang/en/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/it/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/settings/fields.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/settings/fields.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,20 +53,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lang.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lang.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lang/en/lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="198">
+              <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lang.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lang.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lang/it/lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -85,8 +82,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/models/Settings.php" />
         <option value="$PROJECT_DIR$/models/settings/fields.yaml" />
-        <option value="$PROJECT_DIR$/lang/en/lang.php" />
         <option value="$PROJECT_DIR$/lang/it/lang.php" />
+        <option value="$PROJECT_DIR$/lang/en/lang.php" />
       </list>
     </option>
   </component>
@@ -191,18 +188,18 @@
       <option name="presentableId" value="Default" />
       <updated>1692686059574</updated>
       <workItem from="1692686061579" duration="2847000" />
-      <workItem from="1695379734376" duration="308000" />
+      <workItem from="1695379734376" duration="1682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3155000" />
+    <option name="totallyTimeSpent" value="4529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.20628998" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.20628998" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -211,7 +208,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37987012" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37987012" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -273,17 +270,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang/en/lang.php">
+    <entry file="file://$PROJECT_DIR$/lang/it/lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang/it/lang.php">
+    <entry file="file://$PROJECT_DIR$/lang/en/lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="198">
+          <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
         </state>
       </provider>
     </entry>

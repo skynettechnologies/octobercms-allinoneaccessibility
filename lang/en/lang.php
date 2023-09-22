@@ -1,5 +1,5 @@
 <?php
-
+$current_domain=isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'-';
 $string= [
     'name' => 'All In One Accessibility',
     'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
