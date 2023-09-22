@@ -6,7 +6,7 @@ $string= [
     'fields' => [
         'title' => 'All In One Accessibility Settings',
         'aioa_licensekey'=>'License Key',
-        'aioa_licensekeydesc'=>'You are currently using Free version which has limited features. <br />Please <a target="_blank" href="https://www.skynettechnologies.com/all-in-one-accessibility#scroll-here">Upgrade</a> to All in One Accessibility Pro and get full version with 52 plus features.',
+        'aioa_licensekeydesc'=>'Please <a href="https://ada.skynettechnologies.us/trial-subscription?utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&utm_campaign=trial-subscription" target="_blank">subscribe</a> for a 10 days free trial and receive a license key to enable 52+ features of All in One Accessibility Pro.<br>No payment charged upfront, Cancel anytime.',
         'aioa_is_enabled'=>'Enable',
         'aioa_colorcode'=>'Hex color code:',
         'aioa_colorcodedesc'=>'You can customize the ADA Widget color. For example: FF5733',
