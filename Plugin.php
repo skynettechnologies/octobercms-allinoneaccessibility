@@ -86,6 +86,7 @@ class Plugin extends PluginBase
         return [];
     }
     
+    /* Registers setting for this plugin. */
     public function registerSettings()
     {
         return [
