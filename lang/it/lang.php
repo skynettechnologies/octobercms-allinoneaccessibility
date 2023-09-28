@@ -11,6 +11,12 @@ if (aioa_licensekeyInput && aioa_licensekeyInput.value) {
   var aioa_licensekey_desc = document.getElementById("aioa_licensekey_desc");
   aioa_licensekey_desc.style.display = "none";
 }
+aioa_licensekeyInput.addEventListener("change", function() {
+    document.getElementById("Form-field-Settings-aioa_is_enabled").checked=true;
+    if (aioa_licensekeyInput.value=="") {
+        document.getElementById("Form-field-Settings-aioa_is_enabled").checked=false;
+    }
+});
 setTimeout(function() {
         const submitbtn=document.querySelector(\'button[type="submit"]\');
         submitbtn.addEventListener("click", function() {
@@ -20,7 +26,9 @@ setTimeout(function() {
             
         });
     },500);
-</script><style>
+</script>
+<style>
+  
   .settings-page.size-large{
       max-width: 850px;
       background: #e9efff;
@@ -183,20 +191,31 @@ setTimeout(function() {
         }
     },500);
     
-    /*if(document.getElementsByName("Settings[aioa_icontype]").length) {
-        var aioa_icon_types = document.getElementsByName("Settings[aioa_icontype]");
-        var aioa_icon_type_value="aioa_icon_type_1";
-        for(var i = 0; i < aioa_icon_types.length; i++) {
-            if(aioa_icon_types[i].checked) {
-                aioa_icon_type_value = aioa_icon_types[i].value;
-            }
-        }
-        document.getElementById("aioa_icon_type_1_image").classList.add("d-none");
-        document.getElementById("aioa_icon_type_2_image").classList.add("d-none");
-        document.getElementById("aioa_icon_type_3_image").classList.add("d-none");
-        document.getElementById(aioa_icon_type_value+"_image").classList.remove("d-none");
-    }*/
+    setTimeout(function() {
+        var getSelectedValueaioa_icontype_value = document.querySelector( \'input[name="Settings[aioa_icontype]"]:checked\').value;
+        //var resImage = getSelectedValueaioa_icontype_value.replace("_", "-");
+        var resImage=getSelectedValueaioa_icontype_value.replace(new RegExp(\'_\', \'g\'), \'-\');
+        var resImage = "https://www.skynettechnologies.com/sites/default/files/"+resImage+".svg";
+        console.log(resImage);
+        
+        var aioa_big_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_big_icon"]\').id;
+        document.querySelector(\'label[for="\'+aioa_big_icon_id+\'"]\').innerHTML=\'<img src="\'+resImage+\'" alt="Big" title="Big" width="75" height="75" style="background-color:#6f42c1;border-radius:100%">\';
+        
+        var aioa_medium_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_medium_icon"]\').id;
+        document.querySelector(\'label[for="\'+aioa_medium_icon_id+\'"]\').innerHTML=\'<img src="\'+resImage+\'" alt="Medium" title="Medium" width="65" height="65" style="background-color:#6f42c1;border-radius:100%">\';
+        
+        var aioa_default_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_default_icon"]\').id;
+        document.querySelector(\'label[for="\'+aioa_default_icon_id+\'"]\').innerHTML=\'<img src="\'+resImage+\'" alt="Default" title="Default" width="55" height="55" style="background-color:#6f42c1;border-radius:100%">\';
+        
+        var aioa_small_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_small_icon"]\').id;
+        document.querySelector(\'label[for="\'+aioa_small_icon_id+\'"]\').innerHTML=\'<img src="\'+resImage+\'" alt="Small" title="Small" width="45" height="45" style="background-color:#6f42c1;border-radius:100%">\';
+        
+        var aioa_extra_small_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_extra_small_icon"]\').id;
+        document.querySelector(\'label[for="\'+aioa_extra_small_icon_id+\'"]\').innerHTML=\'<img src="\'+resImage+\'" alt="Extra Small" title="Extra Small" width="35" height="35" style="background-color:#6f42c1;border-radius:100%">\';
+    },500);
 }
+
+
     setTimeout(function() {
         /*=== Set Image to radio button label ===*/
         var aioa_icon_type_1_id=document.querySelector(\'input[name="Settings[aioa_icontype]"][value="aioa_icon_type_1"]\').id;
@@ -208,28 +227,14 @@ setTimeout(function() {
         var aioa_icon_type_3_id=document.querySelector(\'input[name="Settings[aioa_icontype]"][value="aioa_icon_type_3"]\').id;
         document.querySelector(\'label[for="\'+aioa_icon_type_3_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-3.svg" alt="Low Vision" title="Low Vision" width="55" height="55" style="background-color:#6f42c1;border-radius:100%">\';
         
-        
-        var aioa_big_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_big_icon"]\').id;
-        document.querySelector(\'label[for="\'+aioa_big_icon_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" alt="Big" title="Big" width="75" height="75" style="background-color:#6f42c1;border-radius:100%">\';
-        
-        var aioa_medium_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_medium_icon"]\').id;
-        document.querySelector(\'label[for="\'+aioa_medium_icon_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" alt="Medium" title="Medium" width="65" height="65" style="background-color:#6f42c1;border-radius:100%">\';
-        
-        var aioa_default_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_default_icon"]\').id;
-        document.querySelector(\'label[for="\'+aioa_default_icon_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" alt="Default" title="Default" width="55" height="55" style="background-color:#6f42c1;border-radius:100%">\';
-        
-        var aioa_small_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_small_icon"]\').id;
-        document.querySelector(\'label[for="\'+aioa_small_icon_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" alt="Small" title="Small" width="45" height="45" style="background-color:#6f42c1;border-radius:100%">\';
-        
-        var aioa_extra_small_icon_id=document.querySelector(\'input[name="Settings[aioa_iconsize]"][value="aioa_extra_small_icon"]\').id;
-        document.querySelector(\'label[for="\'+aioa_extra_small_icon_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" alt="Extra Small" title="Extra Small" width="35" height="35" style="background-color:#6f42c1;border-radius:100%">\';
-        
     },500);
+    
     var aioa_icon_types = document.getElementsByName("Settings[aioa_icontype]");
     
     var prev="aioa_icon_type_1";
     for(var i = 0; i < aioa_icon_types.length; i++){
         aioa_icon_types[i].addEventListener("change", function() {
+            //console.log("change call"+this.value+" pr "+prev);
             if (this.value != prev) {
                 prev = this.value;
                 showhideaioicontype();
