@@ -215,7 +215,6 @@ setTimeout(function() {
     },500);
 }
 
-
     setTimeout(function() {
         /*=== Set Image to radio button label ===*/
         var aioa_icon_type_1_id=document.querySelector(\'input[name="Settings[aioa_icontype]"][value="aioa_icon_type_1"]\').id;

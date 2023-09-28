@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7449361-1cf3-4696-98bf-f579f168ed15" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/lang/en/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/it/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/lang.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,8 +56,8 @@
       <file leaf-file-name="lang.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lang/en/lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+            <state relative-caret-position="126">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="e#4411#4962#1" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -204,12 +203,12 @@
       <updated>1692686059574</updated>
       <workItem from="1692686061579" duration="2847000" />
       <workItem from="1695379734376" duration="2896000" />
-      <workItem from="1695891896170" duration="3680000" />
+      <workItem from="1695891896170" duration="3782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9423000" />
+    <option name="totallyTimeSpent" value="9525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -345,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lang/en/lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="269" lean-forward="true" selection-start-line="269" selection-end-line="269" />
+        <state relative-caret-position="126">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
           <folding>
             <element signature="e#4411#4962#1" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
