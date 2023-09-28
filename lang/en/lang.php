@@ -21,7 +21,6 @@ setTimeout(function() {
         });
     },500);
 </script><style>
-  
   .settings-page.size-large{
       max-width: 850px;
       background: #e9efff;
