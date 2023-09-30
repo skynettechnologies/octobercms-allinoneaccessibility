@@ -33,9 +33,11 @@ class AllInOneAccessibility extends ComponentBase
         $isenabled = isset($widget_setting_ada->aioa_is_enabled)?$widget_setting_ada->aioa_is_enabled:false;
         $request_param=false;
         if($isenabled) {
-            $color = isset($widget_setting_ada->aioa_colorcode)?$widget_setting_ada->aioa_colorcode:'0678be';
+            $color = (isset($widget_setting_ada->aioa_colorcode) && !empty($widget_setting_ada->aioa_colorcode))?$widget_setting_ada->aioa_colorcode:'420083';
             $color = trim(str_replace('#','',$color));
             $token = isset($widget_setting_ada->aioa_licensekey)?$widget_setting_ada->aioa_licensekey:'';
+            /*== Integrate API to check key is valid or not ===*/
+            
             $iconposition='bottom_right';
             if(isset($widget_setting_ada->aioa_iconposition)) {
                 $iconposition = str_replace('aioa_','',$widget_setting_ada->aioa_iconposition);
