@@ -47,8 +47,8 @@ class AllInOneAccessibility extends ComponentBase
                 $iconsize = str_replace('_','-',$widget_setting_ada->aioa_iconsize);
             }
             $icontype='aioa-icon-type-1';
-            if(isset($widget_setting_ada->icontype)) {
-                $icontype = str_replace('_','-',$widget_setting_ada->icontype);
+            if(isset($widget_setting_ada->aioa_icontype)) {
+                $icontype = str_replace('_','-',$widget_setting_ada->aioa_icontype);
             }
             $time=rand(0,999);
             $request_param='colorcode=#'.$color.'&token='.$token.'&t='.$time.'&position='.$iconposition.'.'.$icontype.'.'.$iconsize;
