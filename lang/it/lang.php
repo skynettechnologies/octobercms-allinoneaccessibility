@@ -6,16 +6,53 @@ $string= [
     'fields' => [
         'title' => 'All In One Accessibility Settings',
         'aioa_licensekey'=>'License Key',
-        'aioa_licensekeydesc'=>'<span id="aioa_licensekey_desc">Please <a href="https://ada.skynettechnologies.us/trial-subscription?utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&utm_campaign=trial-subscription" target="_blank">subscribe</a> for a 10 days free trial and receive a license key to enable 52+ features of All in One Accessibility Pro.<br>No payment charged upfront, Cancel anytime.</span><script>var aioa_licensekeyInput = document.getElementById("Form-field-Settings-aioa_licensekey");
+        'aioa_licensekeydesc'=>'<span id="aioa_licensekey_desc">Please <a href="https://www.skynettechnologies.com/add-ons/cart/?add-to-cart=116&variation_id=117&quantity=1&utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&&utm_campaign=purchase-plan" target="_blank">Upgrade</a> to full version of All in One Accessibility Pro.</span>
+<span id="invalid-key-msg" class="text-danger" style="display: none;">Please enter a valid key</span><script>var aioa_licensekeyInput = document.getElementById("Form-field-Settings-aioa_licensekey");
+var aioa_licensekey_desc = document.getElementById("aioa_licensekey_desc");
 if (aioa_licensekeyInput && aioa_licensekeyInput.value) {
-  var aioa_licensekey_desc = document.getElementById("aioa_licensekey_desc");
   aioa_licensekey_desc.style.display = "none";
 }
 aioa_licensekeyInput.addEventListener("change", function() {
+    var key=aioa_licensekeyInput.value;
     document.getElementById("Form-field-Settings-aioa_is_enabled").checked=true;
+      var server_name = "'.$current_domain.'";
+        var request = new XMLHttpRequest();
+        var url =  \'https://www.skynettechnologies.com/add-ons/license-api.php?\';
+        var params = "token=" + key +"&server_name=" + server_name;
+
+        request.open(\'POST\', url, true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.onreadystatechange = function() {
+            //$(\'.loading\').hide();
+            if (request.readyState === XMLHttpRequest.DONE) {
+                if (request.status === 200) {
+                    var response = JSON.parse(request.response);
+                    var invalid_key_msg = document.getElementById("invalid-key-msg");
+                    console.log(response.valid);
+                    if (response.valid == 1) {
+                        aioa_licensekey_desc.style.display = "none";
+                        invalid_key_msg.style.display = "none";
+                    }
+                    else {
+                        aioa_licensekey_desc.style.display = "block";
+                        invalid_key_msg.style.display = "none";
+                        if(key!=\'\'){
+                            aioa_licensekey_desc.style.display = "none";
+                            invalid_key_msg.style.display = "block";
+                            aioa_licensekeyInput.value="";
+                        }
+                    }
+                }
+            }
+        };
+        //$(\'.loading\').show();
+        request.send(params);
+
+    /*document.getElementById("Form-field-Settings-aioa_is_enabled").checked=true;
     if (aioa_licensekeyInput.value=="") {
         document.getElementById("Form-field-Settings-aioa_is_enabled").checked=false;
-    }
+    }*/
 });
 setTimeout(function() {
         const submitbtn=document.querySelector(\'button[type="submit"]\');

@@ -10,7 +10,7 @@ fields:
     aioa_is_enabled:
             label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_is_enabled
             type: switch
-            default: false
+            default: true
     aioa_licensekey:
         label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_licensekey
         type: text

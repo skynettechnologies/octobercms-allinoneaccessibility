@@ -40,15 +40,15 @@ class Settings extends Model
     public function filterFields($fields, $context = null) {
         $fields->aioa_icontype->hidden = true;
         $fields->aioa_iconsize->hidden = true;
-        $fields->aioa_iconposition->hidden = true;
-        $fields->aioa_colorcode->hidden = true;
-        $fields->aioa_is_enabled->hidden = true;
+        //$fields->aioa_iconposition->hidden = true;
+        //$fields->aioa_colorcode->hidden = true;
+        //$fields->aioa_is_enabled->hidden = true;
         if($this->aioa_licensekey != '') {
             $fields->aioa_icontype->hidden = false;
             $fields->aioa_iconsize->hidden = false;
-            $fields->aioa_iconposition->hidden = false;
-            $fields->aioa_colorcode->hidden = false;
-            $fields->aioa_is_enabled->hidden = false;
+            //$fields->aioa_iconposition->hidden = false;
+            //$fields->aioa_colorcode->hidden = false;
+            //$fields->aioa_is_enabled->hidden = false;
         }
     }
 }
