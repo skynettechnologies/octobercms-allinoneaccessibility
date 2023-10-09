@@ -5,7 +5,7 @@ $string= [
     'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
     'fields' => [
         'title' => 'All In One Accessibility Settings',
-        'aioa_licensekey'=>'License Key',
+        'aioa_licensekey'=>'License key required for full version',
         'aioa_licensekeydesc'=>'<span id="aioa_licensekey_desc">Please <a href="https://www.skynettechnologies.com/add-ons/cart/?add-to-cart=116&variation_id=117&quantity=1&utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&&utm_campaign=purchase-plan" target="_blank">Upgrade</a> to full version of All in One Accessibility Pro.</span>
 <span id="invalid-key-msg" class="text-danger" style="display: none;">Please enter a valid key</span><script>var aioa_licensekeyInput = document.getElementById("Form-field-Settings-aioa_licensekey");
 var aioa_licensekey_desc = document.getElementById("aioa_licensekey_desc");
