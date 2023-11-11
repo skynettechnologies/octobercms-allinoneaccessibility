@@ -54,6 +54,33 @@ aioa_licensekeyInput.addEventListener("change", function() {
         document.getElementById("Form-field-Settings-aioa_is_enabled").checked=false;
     }*/
 });
+    console.log(aioa_licensekeyInput.value);
+    if (aioa_licensekeyInput.value=="") {
+        var request = new XMLHttpRequest();
+        var url =  \'https://www.skynettechnologies.com/add-ons/discount_offer.php?platform=octoberCMS?\';
+        request.open(\'POST\', url, true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.onreadystatechange = function() {
+            //$(\'.loading\').hide();
+            if (request.readyState === XMLHttpRequest.DONE) {
+                if (request.status === 200 && request.response!="") {
+                    //console.log(request.response);
+                     const form_tag_parentElement = document.getElementsByTagName("FORM")[0].parentElement;
+                     //form_tag_parentElement.prepend(request.response);
+                     console.log(form_tag_parentElement);
+                     
+                    theKid = document.createElement("div");
+                    theKid.innerHTML = request.response;
+                    form_tag_parentElement.appendChild(theKid);
+                    form_tag_parentElement.insertBefore(theKid, form_tag_parentElement.firstChild);
+                }
+            }
+        };
+        //$(\'.loading\').show();
+        request.send();
+    }
+    
 setTimeout(function() {
         const submitbtn=document.querySelector(\'button[type="submit"]\');
         submitbtn.addEventListener("click", function() {
@@ -67,11 +94,13 @@ setTimeout(function() {
 <style>
   
   .settings-page.size-large{
-      max-width: 850px;
-      background: #e9efff;
+    max-width: 850px;
+    background: #e9efff;
     border-radius: 19px;
-    /* margin: 0 auto 40px; */
+    margin: 0 auto 40px;
     padding: 27px 20px 30px 20px;
+    display:block;
+    height:auto;
   }
   [type="radio"]:checked,
   [type="radio"]:not(:checked) {
@@ -192,6 +221,10 @@ setTimeout(function() {
     width: calc(25% - 30px);
     margin-left: 15px;
     margin-right: 15px;
+  }
+  .ada-banner-section{padding-left: 15px; padding-right: 15px; margin-bottom: 20px;}
+  form.layout.settings-page.size-large .form-buttons {
+    padding-top:30px;
   }
 </style>',
         'aioa_is_enabled'=>'Enable',
