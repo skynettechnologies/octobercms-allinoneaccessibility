@@ -1,22 +1,16 @@
 # All in One Accessibility™
 
-All in One Accessibility AI Widget Supports 140 Languages and includes 70+ features. Screen Reader, Talk & Type, Voice Navigation, Dictionary, Virtual Keyboard, Accessibility Profiles, Sign language Libras (Brazilian Portuguese) Custom Widget Color, Icon size, Position, Talk & Type, GA4 Tracking and custom accessibility statement link are some of the top features.
+All in One Accessibility AI free Widget Supports limited 23 features only and includes 140 Languages. 
    
-Our AI automatically remediates images Alternative text and uses the accessibility interface which handles UI and design related adjustments. All in One Accessibility app enhances your website accessibility to people with hearing or vision impairments, motor impaired, color blind, dyslexia, cognitive & learning impairments, seizure and epileptic, and ADHD problems.
-   
-It improves website ADA compliance and browser experience for ADA, WCAG 2.1 & 2.2, Section 508, California Unruh Act, Australian DDA, European EAA EN 301 549, UK Equality Act (EA), Israeli Standard 5568, Ontario AODA, Canada ACA, German BITV, France RGAA, Brazilian Inclusion Law (LBI 13.146/2015), Spain UNE 139803:2012, JIS X 8341 (Japan), Italian Stanca Act and Switzerland DDA Standards.
+It improves website ADA compliance and browser experience for ADA, WCAG 2.0, 2.1 & 2.2, Section 508, California Unruh Act, Australian DDA, European EAA EN 301 549, UK Equality Act (EA), Israeli Standard 5568, Ontario AODA, Canada ACA, German BITV, France RGAA, Brazilian Inclusion Law (LBI 13.146/2015), Spain UNE 139803:2012, JIS X 8341 (Japan), Italian Stanca Act and Switzerland DDA Standards.
    
 Follows the best industry security, SEO practices and standards ISO 9001:2015 & ISO 27001:2013 and complies with GDPR, COPPA regulations. Member of W3C and International Association of Accessibility Professionals (IAAP). It is a flexible & lightweight widget that can be changed according to law and reduces the risk of time-consuming accessibility lawsuits.
 
-Following features can be added as an addon:
-- PDF/Document Remediation
-- Modify Accessibility Menu
-- White Label and Custom Branding
-- Live Website Translations
-- VPAT / ACR Report
-- Manual Accessibility Audit
+For more details/features, Please visit [All in One Accessibility](https://www.skynettechnologies.com/all-in-one-accessibility)
 
-For more details/features, Please visit [All in One Accessibility](https://www.skynettechnologies.com/all-in-one-accessibility).
+Unlock over 70 features with the All in One Accessibility Widget through a paid subscription. See the detailed comparison of Paid vs. Free features [here](https://www.skynettechnologies.com/all-in-one-accessibility/features).
+
+We provide a 10-day free trial. Get started [here](https://ada.skynettechnologies.us/trial-subscription?utm_source=all-in-one-accessibility&utm_medium=landing-page&utm_campaign=trial-subscription).
 
 ## Installation
 
@@ -43,10 +37,6 @@ php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@g
 
 Go the plugin settings and configure All in One Accessibility the way you like.You can change the widget color & position.   
 
-### License
-
-All in One Accessibility is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
 ## Live Demo
 https://octobercms.skynettechnologies.us/
 
@@ -68,14 +58,10 @@ https://octobercms.skynettechnologies.us/
 
 [![All in One Accessibility](https://img.youtube.com/vi/czwC0PKIqkc/0.jpg)](https://www.youtube.com/watch?v=S9e9e1UiZFk)
 
-## Acknowledgements
-
-- [October CMS All in One Accessibility](https://www.skynettechnologies.com/october-cms-accessibility-widget)
-- [How to install All in One Accessibility Plugin on October CMS](https://www.skynettechnologies.com/blog/october-cms-web-accessibility-widget-installation)
-
 ## Documentation
-
-[All in One Accessibility - User Guide](https://www.skynettechnologies.com/sites/default/files/accessibility-widget-features-list.pdf)
+- [Purchase October CMS All in One Accessibility](https://www.skynettechnologies.com/october-cms-accessibility-widget)
+- [How to install All in One Accessibility Plugin on October CMS](https://www.skynettechnologies.com/blog/october-cms-web-accessibility-widget-installation)
+- [All in One Accessibility - Features Guide](https://www.skynettechnologies.com/sites/default/files/accessibility-widget-features-list.pdf)
 
 ## Submit a Support Request
 
@@ -104,3 +90,7 @@ This plugin is developed and maintained by [Skynet Technologies USA LLC](https:/
 
 ## Current Maintainers
 - [Skynet Technologies USA LLC](https://github.com/skynettechnologies)
+
+### License
+
+All in One Accessibility is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
