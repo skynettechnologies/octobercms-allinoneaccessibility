@@ -39,7 +39,7 @@ php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@g
 Go the plugin settings and configure All in One Accessibility the way you like.You can change the widget color & position.   
 
 ## Live Demo
-https://octobercms.skynettechnologies.us/
+https://octobercmsaccessibility.skynettechnologies.us/
 
 ## Screenshots
 
