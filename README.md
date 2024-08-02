@@ -21,7 +21,8 @@ We provide a 10-day free trial. Get started [here](https://ada.skynettechnologie
 ### Steps
 
 ## Install Plugin
-plugin:install - downloads and installs the plugin by its name. The next example will install a plugin called SkynetTechnologies.Allinoneaccessibility.
+
+Plugin:install - downloads and installs the plugin by its name. The next example will install a plugin called SkynetTechnologies.Allinoneaccessibility.
 ``` bash
 php artisan plugin:install skynettechnologies.allinoneaccessibility
 ```
@@ -56,9 +57,10 @@ https://octobercms.skynettechnologies.us/
 
 ## Video
 
-[![All in One Accessibility](https://img.youtube.com/vi/czwC0PKIqkc/0.jpg)](https://www.youtube.com/watch?v=S9e9e1UiZFk)
+[![All in One Accessibility](https://img.youtube.com/vi/I-DjgZyleeI/0.jpg)](https://www.youtube.com/watch?v=I-DjgZyleeI)
 
 ## Documentation
+
 - [Purchase October CMS All in One Accessibility](https://www.skynettechnologies.com/october-cms-accessibility-widget)
 - [How to install All in One Accessibility Plugin on October CMS](https://www.skynettechnologies.com/blog/october-cms-web-accessibility-widget-installation)
 - [All in One Accessibility - Features Guide](https://www.skynettechnologies.com/sites/default/files/accessibility-widget-features-list.pdf)
@@ -86,11 +88,7 @@ For more details, Please visit [Partnership Opportunities Page](https://www.skyn
 
 ## Credits
 
-This plugin is developed and maintained by [Skynet Technologies USA LLC](https://www.skynettechnologies.com)
+This addon is developed and maintained by [Skynet Technologies USA LLC](https://www.skynettechnologies.com)
 
 ## Current Maintainers
 - [Skynet Technologies USA LLC](https://github.com/skynettechnologies)
-
-### License
-
-All in One Accessibility is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
