@@ -4,5 +4,12 @@
     "description": "Quick Web Accessibility Implementation with All In One Accessibility!",
     "require": {
         "composer/installers": "~1.0"
-    }
+    },
+    "authors": [
+        {
+            "name": "Rajesh Bhimani",
+            "email": "developer3@skynettechnologies.com"
+        }
+    ],
+    "license": "MIT"
 }
