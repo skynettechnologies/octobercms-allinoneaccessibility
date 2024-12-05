@@ -8,33 +8,72 @@ fields:
         span: left
         type: section
     aioa_is_enabled:
-            label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_is_enabled
-            type: switch
-            default: true
-    aioa_licensekey:
-        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_licensekey
-        type: text
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_is_enabled
+        type: switch
+        default: true
         comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_licensekeydesc
         commentHtml: true
     aioa_colorcode:
         label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_colorcode
-        type: text
+        type: colorpicker
         comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_colorcodedesc
         commentHtml: true
+    aioa_positiontype:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_positiontype
+        type: radio
+        default: aioa_positiontype_fixed
+        commentHtml: true
+        comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_positiontypedesc
+        options:
+          aioa_positiontype_fixed: skynettechnologies.allinoneaccessibility::lang.fields.aioa_positiontype_fixed
+          aioa_positiontype_custom: skynettechnologies.allinoneaccessibility::lang.fields.aioa_positiontype_custom
     aioa_iconposition:
-          label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconposition
-          comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconpositiondesc
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconposition
+        comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconpositiondesc
+        type: radio
+        default: aioa_bottom_right
+        options:
+            aioa_top_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_left
+            aioa_top_center: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_center
+            aioa_top_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_right
+            aioa_middle_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_middle_left
+            aioa_middle_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_middle_right
+            aioa_bottom_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_left
+            aioa_bottom_center: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_center
+            aioa_bottom_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_right
+        cssClass: default-position
+
+    aioa_custom_position_horizontal:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_position_horizontal
+        type: number
+        cssClass: custom-position
+    aioa_custom_position_horizontal_type:
+      label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_position_horizontal_type
+      type: dropdown
+      options:
+          to_the_left: skynettechnologies.allinoneaccessibility::lang.fields.to_the_left
+          to_the_right: skynettechnologies.allinoneaccessibility::lang.fields.to_the_right
+      cssClass: custom-position
+    aioa_custom_position_vertical:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_position_vertical
+        type: number
+        cssClass: custom-position
+    aioa_custom_position_vertical_type:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_position_vertical_type
+        type: dropdown
+        options:
+            to_the_top: skynettechnologies.allinoneaccessibility::lang.fields.to_the_top
+            to_the_bottom: skynettechnologies.allinoneaccessibility::lang.fields.to_the_bottom
+        cssClass: custom-position
+    aioa_widget_size:
+          label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_widget_size
           type: radio
-          default: aioa_bottom_right
+          default: aioa_widget_size_regular_size
+          commentHtml: true
+          comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_widget_sizedesc
           options:
-              aioa_top_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_left
-              aioa_top_center: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_center
-              aioa_top_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_top_right
-              aioa_middel_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_middel_left
-              aioa_middel_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_middel_right
-              aioa_bottom_left: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_left
-              aioa_bottom_center: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_center
-              aioa_bottom_right: skynettechnologies.allinoneaccessibility::lang.fields.aioa_bottom_right
+            aioa_widget_size_regular_size: skynettechnologies.allinoneaccessibility::lang.fields.aioa_widget_size_regular_size
+            aioa_widget_size_over_size: skynettechnologies.allinoneaccessibility::lang.fields.aioa_widget_size_over_size
     aioa_icontype:
         label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icontype
         type: radio
@@ -45,15 +84,56 @@ fields:
           aioa_icon_type_1: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_1
           aioa_icon_type_2: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_2
           aioa_icon_type_3: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_3
+          aioa_icon_type_4: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_4
+          aioa_icon_type_5: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_5
+          aioa_icon_type_6: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_6
+          aioa_icon_type_7: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_7
+          aioa_icon_type_8: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_8
+          aioa_icon_type_9: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_9
+          aioa_icon_type_10: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_10
+          aioa_icon_type_11: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_11
+          aioa_icon_type_12: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_12
+          aioa_icon_type_13: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_13
+          aioa_icon_type_14: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_14
+          aioa_icon_type_15: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_15
+          aioa_icon_type_16: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_16
+          aioa_icon_type_17: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_17
+          aioa_icon_type_18: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_18
+          aioa_icon_type_19: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_19
+          aioa_icon_type_20: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_20
+          aioa_icon_type_21: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_21
+          aioa_icon_type_22: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_22
+          aioa_icon_type_23: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_23
+          aioa_icon_type_24: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_24
+          aioa_icon_type_25: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_25
+          aioa_icon_type_26: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_26
+          aioa_icon_type_27: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_27
+          aioa_icon_type_28: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_28
+          aioa_icon_type_29: skynettechnologies.allinoneaccessibility::lang.fields.aioa_icon_type_29
+    aioa_iconsizetype:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsizetype
+        type: radio
+        default: aioa_iconsizetype_fixed
+        commentHtml: true
+        options:
+          aioa_iconsizetype_fixed: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsizetype_fixed
+          aioa_iconsizetype_custom: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsizetype_custom
     aioa_iconsize:
-            label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsize
-            type: radio
-            default: aioa_default_icon
-            commentHtml: true
-            comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsizedesc
-            options:
-              aioa_big_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_big_icon
-              aioa_medium_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_medium_icon
-              aioa_default_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_default_icon
-              aioa_small_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_small_icon
-              aioa_extra_small_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_extra_small_icon
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsize
+        type: radio
+        default: aioa_default_icon
+        commentHtml: true
+        comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_iconsizedesc
+        cssClass: default-iconsize
+        options:
+          aioa_big_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_big_icon
+          aioa_medium_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_medium_icon
+          aioa_default_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_default_icon
+          aioa_small_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_small_icon
+          aioa_extra_small_icon: skynettechnologies.allinoneaccessibility::lang.fields.aioa_extra_small_icon
+    aioa_custom_iconsize:
+        label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_iconsize
+        type: number
+        commentHtml: true
+        cssClass: custom-iconsize
+        comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_iconsizedesc
