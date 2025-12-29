@@ -1,4 +1,4 @@
 {% set keyparam = __SELF__.getWidgetTokenParam() %}
 {% if keyparam %}
-<script id='aioa-adawidget' src='https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?{{__SELF__.getWidgetTokenParam()}}'></script>
+<script id='aioa-adawidget' src='{{__SELF__.getWidgetTokenParam()}}'></script>
 {% endif %}

@@ -53,7 +53,19 @@ class AllInOneAccessibility extends ComponentBase
             $time=rand(0,999);
             $request_param='colorcode=#'.$color.'&token='.$token.'&t='.$time.'&position='.$iconposition.'.'.$icontype.'.'.$iconsize;
         }
-        return $request_param;
+    
+        $domain_prefix='www';
+        $responseCountry = \Http::post('https://ipapi.co/json/');
+        if (!$responseCountry->successful()) {
+        }
+        else {
+            $dataCountry = $responseCountry->json();
+            if(isset($dataCountry['in_eu']) && $dataCountry['in_eu']){
+                $domain_prefix='eu';
+            }
+        }
+        $request_param_script = 'https://'.$domain_prefix.'.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?'.$request_param;
+        return $request_param_script;
     }
     
     public function text()

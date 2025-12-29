@@ -63,6 +63,22 @@ class Settings extends Model
             $email = 'no-reply@' . $url;
 
             $package_type = "free-widget";
+            $no_required_eu=1;
+            $country_code='';
+            $responseCountry = \Http::post('https://ipapi.co/json/');
+            if (!$responseCountry->successful()) {
+            
+            }
+            else {
+                $dataCountry = $responseCountry->json();
+                if(isset($dataCountry['in_eu']) && $dataCountry['in_eu']){
+                    $no_required_eu=0;
+                }
+                if(isset($dataCountry['country_code']) && $dataCountry['country_code']){
+                    $country_code=$dataCountry['country_code'];
+                }
+            }
+            
             $arr_details = array(
                 'name' => $url,
                 'email' => $email,
@@ -73,7 +89,8 @@ class Settings extends Model
                 'end_date' => '',
                 'platform' => 'october-cms',
                 'is_free_widget' => '1',
-                'country' => ''
+                'country' => $country_code,
+                'no_required_eu' => $no_required_eu
             );
             $response_store_free_widget = \Http::post('https://ada.skynettechnologies.us/api/add-user-domain', $arr_details);
         }
