@@ -2,10 +2,10 @@
 $current_domain=isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'-';
 
 $string= [
-    'name' => 'All In One Accessibility',
-    'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
+    'name' => 'All in One Accessibility',
+    'description' => 'Quick Web Accessibility Implementation with All in One Accessibility!',
     'fields' => [
-        'title' => 'All In One Accessibility Settings',
+        'title' => 'All in One Accessibility Settings',
         'aioa_licensekey'=>'License key required for full version',
         'aioa_licensekeydesc'=>'<strong id="aioa_licensekey_desc">Please <a href="https://www.skynettechnologies.com/add-ons/cart/?add-to-cart=116&variation_id=117&quantity=1&utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&&utm_campaign=purchase-plan" target="_blank">Upgrade</a> to paid version of All in One Accessibility®.</strong>
     <span id="invalid-key-msg" class="text-danger" style="display: none;">Please enter a valid key</span><script>
@@ -334,7 +334,7 @@ $string= [
         'aioa_icon_type_28'=>'Icon Type',
         'aioa_icon_type_29'=>'Icon Type',
         'aioa_icontypedesc'=>'<div class="row mb-3 d-none">
-<div class="col-md-1" id="aioa_icon_type_1_image"><img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" width="55" height="55" style="background-color:#6f42c1;border-radius:100%"></div>
+<div class="col-md-1" id="aioa_icon_type_1_image"><img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg" width="55" height="55" style="background-color:#420083;border-radius:100%"></div>
 </div><script>function showhideaioicontype() {
     setTimeout(function() {
          var getSelectedValue = document.querySelector( \'input[name="Settings[aioa_iconposition]"]:checked\');
@@ -352,7 +352,7 @@ $string= [
         }
         var getSelectedValueaioa_colorcode = document.querySelector( \'input[name="Settings[aioa_colorcode]"]\').value;
         if(getSelectedValueaioa_colorcode == "") {
-            document.querySelector(\'input[name="Settings[aioa_colorcode]"]\').value="420083";
+            document.querySelector(\'input[name="Settings[aioa_colorcode]"]\').value="#420083";
         }
     },500);
     
@@ -363,7 +363,7 @@ $string= [
         var resImage = "https://www.skynettechnologies.com/sites/default/files/"+resImage+".svg";
         
         var aioa_color_element =document.querySelector(\'input[name="Settings[aioa_colorcode]"]\');
-        var aioa_color="#6f42c1";
+        var aioa_color="#420083";
         if(aioa_color_element !== null && aioa_color_element !== undefined){
             aioa_color=aioa_color_element.value;
         }
@@ -390,7 +390,7 @@ $string= [
         /*=== Set Image to radio button label ===*/
         for (let typei = 1; typei <= 29; typei++) {
             var aioa_icon_type_1_id=document.querySelector(\'input[name="Settings[aioa_icontype]"][value="aioa_icon_type_\'+typei+\'"]\').id;
-            document.querySelector(\'label[for="\'+aioa_icon_type_1_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-\'+typei+\'.svg" id="aioa_icon_type_\'+typei+\'" alt="Accessibility" title="Accessibility" width="55" height="55" style="background-color:#6f42c1;border-radius:100%">\';
+            document.querySelector(\'label[for="\'+aioa_icon_type_1_id+\'"]\').innerHTML=\'<img src="https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-\'+typei+\'.svg" id="aioa_icon_type_\'+typei+\'" alt="Accessibility" title="Accessibility" width="55" height="55" style="background-color:#420083;border-radius:100%">\';
         }
     },500);
     
@@ -452,8 +452,8 @@ $string= [
         'aioa_extra_small_icon'=>'Extra Small'
     ],
     'settings' => [
-        'title' => 'All In One Accessibility Settings',
-        'description' => 'Manage All In One Accessibility settings'
+        'title' => 'All in One Accessibility Settings',
+        'description' => 'Manage All in One Accessibility settings'
     ]
 ];
 

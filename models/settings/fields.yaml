@@ -134,6 +134,7 @@ fields:
     aioa_custom_iconsize:
         label: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_iconsize
         type: number
+        min: 0
         commentHtml: true
         cssClass: custom-iconsize
         comment: skynettechnologies.allinoneaccessibility::lang.fields.aioa_custom_iconsizedesc

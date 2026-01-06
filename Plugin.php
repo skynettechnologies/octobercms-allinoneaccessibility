@@ -27,8 +27,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'       => 'All In One Accessibility',
-            'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
+            'name'       => 'All in One Accessibility',
+            'description' => 'Quick Web Accessibility Implementation with All in One Accessibility!',
             'author'      => 'SkynetTechnologies',
             'icon'        => 'icon-pencil-square'
         ];
@@ -51,7 +51,45 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
+        $widget_setting_ada=Settings::instance();
     
+        /*$widget_setting_ada = ga_widget_settings();*/
+        $isenabled = isset($widget_setting_ada->aioa_is_enabled)?$widget_setting_ada->aioa_is_enabled:false;
+        $request_param=false;
+        if($isenabled) {
+            $color = (isset($widget_setting_ada->aioa_colorcode) && !empty($widget_setting_ada->aioa_colorcode))?$widget_setting_ada->aioa_colorcode:'420083';
+            $color = trim(str_replace('#','',$color));
+            $token = isset($widget_setting_ada->aioa_licensekey)?$widget_setting_ada->aioa_licensekey:'';
+            /*== Integrate API to check key is valid or not ===*/
+        
+            $iconposition='bottom_right';
+            if(isset($widget_setting_ada->aioa_iconposition)) {
+                $iconposition = str_replace('aioa_','',$widget_setting_ada->aioa_iconposition);
+            }
+            $iconsize='aioa-default-icon';
+            if(isset($widget_setting_ada->aioa_iconsize)) {
+                $iconsize = str_replace('_','-',$widget_setting_ada->aioa_iconsize);
+            }
+            $icontype='aioa-icon-type-1';
+            if(isset($widget_setting_ada->aioa_icontype)) {
+                $icontype = str_replace('_','-',$widget_setting_ada->aioa_icontype);
+            }
+            $time=rand(0,999);
+            $request_param='colorcode=#'.$color.'&token='.$token.'&t='.$time.'&position='.$iconposition.'.'.$icontype.'.'.$iconsize;
+        }
+    
+        $domain_prefix='www';
+        $responseCountry = \Http::post('https://ipapi.co/json/');
+        if (!$responseCountry->successful()) {
+        }
+        else {
+            $dataCountry = $responseCountry->json();
+            if(isset($dataCountry['in_eu']) && $dataCountry['in_eu']){
+                $domain_prefix='eu';
+            }
+        }
+        $request_param_script = 'https://'.$domain_prefix.'.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?'.$request_param;
+        echo "<script id='aioa-adawidget' src='$request_param_script'></script>";
     }
     
     /**
@@ -91,13 +129,13 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'All In One Accessibility',
-                'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
-                'category'    => 'All In One Accessibility',
+                'label'       => 'All in One Accessibility',
+                'description' => 'Quick Web Accessibility Implementation with All in One Accessibility!',
+                'category'    => 'All in One Accessibility',
                 'icon'        => 'icon-pencil-square',
                 'class'       => Settings::class,
                 'order'       => 500,
-                'keywords'    => 'All In One Accessibility'
+                'keywords'    => 'All in One Accessibility'
             ]
         ];
     }

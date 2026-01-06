@@ -13,8 +13,8 @@ class AllInOneAccessibility extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'All In One Accessibility',
-            'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!'
+            'name'        => 'All in One Accessibility',
+            'description' => 'Quick Web Accessibility Implementation with All in One Accessibility!'
         ];
     }
 
