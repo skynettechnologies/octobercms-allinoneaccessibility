@@ -4,6 +4,7 @@ namespace SkynetTechnologies\AllInOneAccessibility;
 
 use Backend;
 use System\Classes\PluginBase;
+use Illuminate\Support\Facades\Request;
 
 use Lang;
 
@@ -51,45 +52,42 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-        $widget_setting_ada=Settings::instance();
-    
-        /*$widget_setting_ada = ga_widget_settings();*/
-        $isenabled = isset($widget_setting_ada->aioa_is_enabled)?$widget_setting_ada->aioa_is_enabled:false;
-        $request_param=false;
-        if($isenabled) {
-            $color = (isset($widget_setting_ada->aioa_colorcode) && !empty($widget_setting_ada->aioa_colorcode))?$widget_setting_ada->aioa_colorcode:'420083';
-            $color = trim(str_replace('#','',$color));
-            $token = isset($widget_setting_ada->aioa_licensekey)?$widget_setting_ada->aioa_licensekey:'';
-            /*== Integrate API to check key is valid or not ===*/
+        if (!Request::is('admin/*')) {
+            $widget_setting_ada=Settings::instance();
+            /*$widget_setting_ada = ga_widget_settings();*/
+            $isenabled = isset($widget_setting_ada->aioa_is_enabled)?$widget_setting_ada->aioa_is_enabled:false;
+            $request_param=false;
+            if($isenabled) {
+                $color = (isset($widget_setting_ada->aioa_colorcode) && !empty($widget_setting_ada->aioa_colorcode))?$widget_setting_ada->aioa_colorcode:'420083';
+                $color = trim(str_replace('#','',$color));
+                $token = isset($widget_setting_ada->aioa_licensekey)?$widget_setting_ada->aioa_licensekey:'';
+                /*== Integrate API to check key is valid or not ===*/
+            
+                $iconposition='bottom_right';
+                if(isset($widget_setting_ada->aioa_iconposition)) {
+                    $iconposition = str_replace('aioa_','',$widget_setting_ada->aioa_iconposition);
+                }
+                $iconsize='aioa-default-icon';
+                if(isset($widget_setting_ada->aioa_iconsize)) {
+                    $iconsize = str_replace('_','-',$widget_setting_ada->aioa_iconsize);
+                }
+                $icontype='aioa-icon-type-1';
+                if(isset($widget_setting_ada->aioa_icontype)) {
+                    $icontype = str_replace('_','-',$widget_setting_ada->aioa_icontype);
+                }
+                $time=rand(0,999);
+                $request_param='colorcode=#'.$color.'&token='.$token.'&position='.$iconposition.'&t='.$time;
+            }
         
-            $iconposition='bottom_right';
-            if(isset($widget_setting_ada->aioa_iconposition)) {
-                $iconposition = str_replace('aioa_','',$widget_setting_ada->aioa_iconposition);
-            }
-            $iconsize='aioa-default-icon';
-            if(isset($widget_setting_ada->aioa_iconsize)) {
-                $iconsize = str_replace('_','-',$widget_setting_ada->aioa_iconsize);
-            }
-            $icontype='aioa-icon-type-1';
-            if(isset($widget_setting_ada->aioa_icontype)) {
-                $icontype = str_replace('_','-',$widget_setting_ada->aioa_icontype);
-            }
-            $time=rand(0,999);
-            $request_param='colorcode=#'.$color.'&token='.$token.'&t='.$time.'&position='.$iconposition.'.'.$icontype.'.'.$iconsize;
+            $current_domain = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '-';
+            $response = \Http::post('https://ada.skynettechnologies.us/api/widget-settings', [
+                'website_url' =>$current_domain
+            ]);
+            $responseArr = $response->json();
+            $domain_prefix=(isset($responseArr['Data']['no_required_eu']) && $responseArr['Data']['no_required_eu']=='0')?'eu':'www';
+            $request_param_script = 'https://'.$domain_prefix.'.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?'.$request_param;
+            echo "<script id='aioa-adawidget' src='$request_param_script' defer></script>";
         }
-    
-        $domain_prefix='www';
-        $responseCountry = \Http::post('https://ipapi.co/json/');
-        if (!$responseCountry->successful()) {
-        }
-        else {
-            $dataCountry = $responseCountry->json();
-            if(isset($dataCountry['in_eu']) && $dataCountry['in_eu']){
-                $domain_prefix='eu';
-            }
-        }
-        $request_param_script = 'https://'.$domain_prefix.'.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?'.$request_param;
-        echo "<script id='aioa-adawidget' src='$request_param_script'></script>";
     }
     
     /**
