@@ -9,11 +9,11 @@ This [free accessibility widget](https://www.skynettechnologies.com/free-website
 **Core Features - What you get with free accessibility October CMS widget?**
 
 - Auto-detect language
-- Supports 140+ multi-languages - ideal for global Adobe Commerce storefronts.
+- Supports 190+ multi-languages.
 - Skip to Navigation / Content / Footer
 - Content Adjustment Options
 - Visual & Color Adjustments
-- Dynamic free Magento accessibility module customization including colors, size, icon, and position
+- Dynamic free October CMS accessibility module customization including colors, size, icon, and position
 - Reading mask
 - Accessibility statement
 
@@ -28,7 +28,7 @@ Explore the [free accessibility widget features guide](https://www.skynettechnol
 - Supports alignment with global accessibility standards
 - Improves usability for users with visual, cognitive, and motor impairments.
 - Integrates smoothly with most October CMS themes.
-- Supports 140 plus multi languages and multisite for global accessibility reach.
+- Supports 190 plus multi languages and multisite for global accessibility reach.
 - Available at no cost for core accessibility features.
 
 ### **SECURITY & PRIVACY NOTES**
@@ -51,7 +51,7 @@ Yes.
 
 **Does this free October CMS accessibility plugin support multilingual October CMS sites?**
 
-Yes. It supports 140+ languages.
+Yes. It supports 190+ languages.
 
 **Which October CMS themes are supported by WCAG accessibility October CMS plugin?**
 
@@ -63,13 +63,27 @@ Upgrade to Paid subscription with **70 plus advanced features** and take website
 
 **What additional features are available in the paid version of October CMS WCAG ADA EAA plugin?**
 
-The paid version of October CMS accessibility widget includes following features like screen reader, voice navigation, talk & type, virtual keyboard, accessibility profiles tailored for different users with disabilities group, Libras (Brazilian sign language), dictionary search, multi-language support (140+ languages), and many more. Pricing starts from \$25 / month. Explore more information about [accessibility widget](https://www.skynettechnologies.com/all-in-one-accessibility) and buy now.
+The paid version of October CMS accessibility widget includes following features like screen reader, voice navigation, talk & type, virtual keyboard, accessibility profiles tailored for different users with disabilities group, Libras (Brazilian sign language), dictionary search, multi-language support (190+ languages), and many more. Pricing starts from \$25 / month. Explore more information about [accessibility widget](https://www.skynettechnologies.com/all-in-one-accessibility) and buy now.
 
-### **Supported Languages (140+ Languages)**
+### **Supported Languages (190+ Languages)**
 
 English (USA), English (UK), English (Australian), English (Canadian), English (South Africa), Español, Español (Mexicano), Deutsch, عربى, Português, Português (Brazil), 日本語, Français, Italiano, Polski, Pусский, 中文, 中文 (Traditional), עִברִית, Magyar, Slovenčina, Suomenkieli, Türkçe, Ελληνικά, Latinus, Български, Català, Čeština, Dansk, Nederlands, हिंदी, Bahasa Indonesia, 한국인, Lietuvių, Bahasa Melayu, Norsk, Română, Slovenščina, Svenska, แบบไทย, Українська, Việt Nam, বাঙালি, සිංහල, አማርኛ, Hmoob, မြန်မာ, Eesti keel, latviešu, Cрпски, Hrvatski, ქართული, ʻŌlelo Hawaiʻi, Cymraeg, Cebuano, Samoa, Kreyòl ayisyen, Føroyskt, Crnogorski, Azerbaijani, Euskara, Tagalog, Galego, Norsk Bokmål, فارسی, ਪੰਜਾਬੀ, shqiptare, Hայերեն, অসমীয়া, Aymara, Bamanankan, беларускі, bosanski, Corsu, ދިވެހި, Esperanto, Eʋegbe, Frisian, guarani, ગુજરાતી, Hausa, íslenskur, Igbo, Gaeilge, basa jawa, ಕನ್ನಡ, қазақ, ខ្មែរ, Kinyarwanda, Kurdî, Кыргызча, ພາສາລາວ, Lingala, Luganda, lëtzebuergesch, македонски, Malagasy, മലയാളം, Malti, Maori, मराठी, Монгол, नेपाली, Sea, ଓଡିଆ, Afaan Oromoo, پښتو, Runasimi, संस्कृत, Gàidhlig na h-Alba, Sesotho, Shona, سنڌي, Soomaali, basa Sunda, kiswahili, тоҷикӣ, தமிழ், Татар, తెలుగు, ትግሪኛ, Tsonga, Türkmenler, Ride, اردو, ئۇيغۇر, o'zbek, isiXhosa, יידיש, Yoruba, Zulu, भोजपुरी, डोगरी, कोंकणी, Kurdî, Krio, मैथिली, Meiteilon, Mizo tawng, Sepedi, Ilocano, دری
 
 ### **Installation Steps**
+## Install Plugin
+
+- Plugin:install - downloads and installs the plugin by its name. The next example will install a plugin called SkynetTechnologies.Allinoneaccessibility.
+    ``` bash
+    php artisan plugin:install skynettechnologies.allinoneaccessibility
+    ```
+- You may install a plugin from a remote source using the --from option.
+    ``` bash
+    php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git
+    ```
+- Use the --want option to specify a target branch or version.
+    ``` bash
+    php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git --want=dev-main
+    ```
 
 - Check out our [**October CMS WCAG accessibility widget installation steps**](https://www.skynettechnologies.com/october-cms-accessibility-widget/installation-video)**.**
 
@@ -98,7 +112,7 @@ To avoid CORS policy issues, ensure the following URLs are allowed in your websi
 
 ### **Documentation**
 
-- [**October CMS Accessibility Plugin**](https://www.skynettechnologies.com/magento-ada-compliance-extension)
+- [**October CMS Accessibility Plugin**](https://www.skynettechnologies.com/october-cms-accessibility-widget)
 - **[How to install an Accessibility October CMS EAA compliance app?](https://www.skynettechnologies.com/blog/october-cms-web-accessibility-widget-installation)**
 - [**October CMS WCAG compliance accessibility - Features Guide**](https://www.skynettechnologies.com/sites/default/files/accessibility-widget-features-list.pdf)
 
@@ -137,7 +151,7 @@ Remove the Skynet Technologies logo as well as all of the footer links, popups, 
 
 [**Instant live site translations**](https://www.skynettechnologies.com/all-in-one-accessibility/addons#accessibility-widget-add-ons) **for October CMS sites**
 
-Translate October CMS site into over 140 languages instantly to enhance accessibility for non-native speakers, individuals with language acquisition difficulties, and those with learning disabilities.
+Translate October CMS site into over 190 languages instantly to enhance accessibility for non-native speakers, individuals with language acquisition difficulties, and those with learning disabilities.
 
 [**Modify Accessibility Menu**](https://www.skynettechnologies.com/all-in-one-accessibility/addons#accessibility-widget-add-ons) **for October CMS websites**
 

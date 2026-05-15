@@ -2,77 +2,13 @@
 $current_domain=isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:'-';
 
 $string= [
-    'name' => 'All in One Accessibility',
-    'description' => 'Quick Web Accessibility Implementation with All in One Accessibility!',
+    'name' => 'All In One Accessibility',
+    'description' => 'Quick Web Accessibility Implementation with All In One Accessibility!',
     'fields' => [
-        'title' => 'All in One Accessibility Settings',
+        'title' => 'All In One Accessibility Settings',
         'aioa_licensekey'=>'License key required for full version',
         'aioa_licensekeydesc'=>'<strong id="aioa_licensekey_desc">Please <a href="https://www.skynettechnologies.com/add-ons/cart/?add-to-cart=116&variation_id=117&quantity=1&utm_source='.$current_domain.'&utm_medium=OctoberCMS-module&&utm_campaign=purchase-plan" target="_blank">Upgrade</a> to paid version of All in One Accessibility®.</strong>
-    <span id="invalid-key-msg" class="text-danger" style="display: none;">Please enter a valid key</span><script>
-    setTimeout(function() {
-        const submitbtn=document.querySelector(\'button[type="submit"]\');
-        submitbtn.addEventListener("click", function() {
-            setTimeout(function() {
-                //window.location.reload();
-                var widget_position=document.querySelector( \'input[name="Settings[aioa_iconposition]"]:checked\').value;
-                widget_position = widget_position.replace(/aioa_/g, \'\');
-                
-                var widget_color_code=document.querySelector( \'input[name="Settings[aioa_colorcode]"]\').value;
-                
-                var widget_icon_type=document.querySelector( \'input[name="Settings[aioa_icontype]"]:checked\').value;
-                widget_icon_type = widget_icon_type.replace(/_/g, \'-\');
-                
-                var widget_icon_size=document.querySelector( \'input[name="Settings[aioa_iconsize]"]:checked\').value;
-                widget_icon_size = widget_icon_size.replace(/_/g, \'-\');
-                
-                var widget_icon_size_type=document.querySelector( \'input[name="Settings[aioa_iconsizetype]"]:checked\').value;
-                var is_widget_custom_size= (widget_icon_size_type=="aioa_iconsizetype_custom")?1:0;
-                
-                var widget_icon_size_custom=document.querySelector( \'input[name="Settings[aioa_custom_iconsize]"]\').value;
-                
-                var widget_position_type=document.querySelector( \'input[name="Settings[aioa_positiontype]"]:checked\').value;
-                var is_widget_custom_position= (widget_position_type=="aioa_positiontype_custom")?1:0;
-                
-                var custom_position_horizontal=document.querySelector( \'input[name="Settings[aioa_custom_position_horizontal]"]\').value;
-                var custom_position_vertical=document.querySelector( \'input[name="Settings[aioa_custom_position_vertical]"]\').value;
-                var custom_position_horizontal_type=document.querySelector( \'select[name="Settings[aioa_custom_position_horizontal_type]"]\').value;
-                var custom_position_vertical_type=document.querySelector( \'select[name="Settings[aioa_custom_position_vertical_type]"]\').value;
-                var widget_position_left=(custom_position_horizontal_type=="to_the_left")?custom_position_horizontal:"";
-                var widget_position_right=(custom_position_horizontal_type=="to_the_right")?custom_position_horizontal:"";
-                var widget_position_top=(custom_position_vertical_type=="to_the_top")?custom_position_vertical:"";
-                var widget_position_bottom=(custom_position_vertical_type=="to_the_bottom")?custom_position_vertical:"";
-                var widget_size=document.querySelector( \'input[name="Settings[aioa_widget_size]"]:checked\').value;
-                var widget_size= (widget_size=="aioa_widget_size_over_size")?1:0;
-                
-                const formdata = new FormData();
-                formdata.append("u", "'.$current_domain.'");
-                formdata.append("widget_position", widget_position);
-                formdata.append("widget_color_code", widget_color_code);
-                formdata.append("widget_icon_type", widget_icon_type);
-                formdata.append("widget_icon_size", widget_icon_size);
-                formdata.append("is_widget_custom_size", is_widget_custom_size);
-                formdata.append("widget_icon_size_custom", widget_icon_size_custom);
-                formdata.append("is_widget_custom_position", is_widget_custom_position);
-                formdata.append("widget_position_left", widget_position_left);
-                formdata.append("widget_position_right", widget_position_right);
-                formdata.append("widget_position_top", widget_position_top);
-                formdata.append("widget_position_bottom", widget_position_bottom);
-                formdata.append("widget_size", widget_size);
-                
-                const requestOptions = {
-                  method: "POST",
-                  body: formdata,
-                  redirect: "follow"
-                };
-                fetch("https://ada.skynettechnologies.us/api/widget-setting-update-platform", requestOptions)
-                  .then((response) => response.text())
-                  .then((result) => console.log(result))
-                  .catch((error) => console.error(error));
-            
-            },700);
-        });
-    },500);
-</script>
+        <span id="invalid-key-msg" class="text-danger" style="display: none;">Please enter a valid key</span>
 <style>
   .custom-iconsize {
     width: 40% !important;
@@ -154,7 +90,7 @@ $string= [
     height: 130px;
     padding: 10px !important;
     text-align: center;
-    background-color: #fff;
+    background-color: #420083;
     outline: 4px solid #fff;
     outline-offset: -4px;
     border-radius: 10px;
@@ -426,9 +362,6 @@ $string= [
     setTimeout(function() {
         seticoncolorpreview();
     },550);
-    
-    
-    
 </script>',
         'aioa_top_left'=>'Top Left',
         'aioa_top_center'=>'Top Center',
@@ -452,10 +385,9 @@ $string= [
         'aioa_extra_small_icon'=>'Extra Small'
     ],
     'settings' => [
-        'title' => 'All in One Accessibility Settings',
-        'description' => 'Manage All in One Accessibility settings'
+        'title' => 'All In One Accessibility Settings',
+        'description' => 'Manage All In One Accessibility settings'
     ]
 ];
-
 
 return $string;
