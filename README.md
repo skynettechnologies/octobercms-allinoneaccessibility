@@ -71,20 +71,14 @@ English (USA), English (UK), English (Australian), English (Canadian), English (
 
 ### **Installation Steps**
 ## Install Plugin
-
-- Plugin:install - downloads and installs the plugin by its name. The next example will install a plugin called SkynetTechnologies.Allinoneaccessibility.
+- Install via Admin Panel 
+1. Open the Plugin tab from the Software Updates Section
+2. Search All in One Accessibility 
+3. Select All in One Accessibility plugin & install it
+- Install via Command Line.
     ``` bash
     php artisan plugin:install skynettechnologies.allinoneaccessibility
     ```
-- You may install a plugin from a remote source using the --from option.
-    ``` bash
-    php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git
-    ```
-- Use the --want option to specify a target branch or version.
-    ``` bash
-    php artisan plugin:install skynettechnologies.allinoneaccessibility --from=git@github.com:skynettechnologies/octobercms-allinoneaccessibility.git --want=dev-main
-    ```
-
 - Check out our [**October CMS WCAG accessibility widget installation steps**](https://www.skynettechnologies.com/october-cms-accessibility-widget/installation-video)**.**
 
 **Visit the October CMS Accessibility Improvements Demo to see how does it perform with improved accessibility features:**
@@ -170,13 +164,19 @@ For more details, explore  [**October CMS accessibility partnership opportunitie
 
 ## Screenshots
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-1-free.jpg?v=3)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-1-free.jpg?v=4)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-2-free.jpg?v=3)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-2-free.jpg?v=4)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-3-free.jpg?v=3)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-3-free.jpg?v=4)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-4-free.jpg?v=3)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-4-free.jpg?v=4)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-5-free.jpg?v=4)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-6-free.jpg?v=4)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot-7-free.jpg?v=4)
 
 ## Video
 
